@@ -1,0 +1,18 @@
+runConfig:
+  minInstances: 0
+  maxInstances: 10
+  concurrency: 80
+  cpu: 1
+  memoryMiB: 512
+
+env:
+  - variable: DATABASE_URL
+    secret: DATABASE_URL
+  - variable: SESSION_SECRET
+    value: FGoAZYulbYKkTieQW3oqcbzNp4D7kkAkI0YQhnGFTQY=
+    availability:
+      - RUNTIME
+  - variable: FIREBASE_PROJECT_ID
+    value: heurisko-e49a9
+    availability:
+      - RUNTIME
